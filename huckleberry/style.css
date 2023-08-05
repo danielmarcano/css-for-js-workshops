@@ -1,4 +1,6 @@
-* {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
   font-family: 'Lato', sans-serif;
 }
@@ -7,6 +9,63 @@ html,
 body {
   margin: 0;
   padding: 0;
+  height: 100%;
 }
 
-/* Add styles here! */
+.max-width-wrapper {
+  max-width: 47rem;
+  margin-inline: auto;
+  padding-inline: 24px;
+}
+
+header {
+  background-color: hsl(0deg, 0%, 100%);
+  border-block-end: 8px solid hsl(0deg, 0%, 60%);
+}
+
+p {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  margin: 0;
+  
+  &:not(:last-child) {
+    margin-block-end: 1rem;
+  }
+}
+
+strong {
+  color: hsl(160deg, 100%, 30%);
+}
+
+.intro-chunk {
+  max-width: 416px;
+  padding-block: 96px 64px;
+
+  & .title {
+    margin-block-end: 3rem;
+  }
+}
+
+main {
+  padding-block: 64px;
+  background-color: hsl(0deg, 0%, 40%);
+}
+
+.card {
+  background-color: hsl(0deg, 0%, 100%);
+  border-block-end: 8px solid hsl(0deg, 0%, 60%);
+  padding-inline: 24px;
+  padding-block: 8px 24px;
+  margin-inline: -24px;
+
+  & .indented-heading {
+    background-color: hsl(45deg, 100%, 50%);
+    border-block-end: 8px solid hsl(45deg, 100%, 40%);
+    padding-block: 16px;
+    padding-inline: 32px;    
+    margin: 0;
+    margin-inline-start: -32px;
+    margin-block-end: 1rem;
+    width: fit-content;
+  }
+}
