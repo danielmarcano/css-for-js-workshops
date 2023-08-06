@@ -54,18 +54,17 @@ main {
 .card {
   background-color: hsl(0deg, 0%, 100%);
   border-block-end: 8px solid hsl(0deg, 0%, 60%);
-  padding-inline: 24px;
-  padding-block: 8px 24px;
+  padding: 24px;
   margin-inline: -24px;
+}
 
-  & .indented-heading {
-    background-color: hsl(45deg, 100%, 50%);
-    border-block-end: 8px solid hsl(45deg, 100%, 40%);
-    padding-block: 16px;
-    padding-inline: 32px;    
-    margin: 0;
-    margin-inline-start: -32px;
-    margin-block-end: 1rem;
-    width: fit-content;
-  }
+.indented-heading {
+  background-color: hsl(45deg, 100%, 50%);
+  border-block-end: 8px solid hsl(45deg, 100%, 40%);
+  padding-block: 16px;
+  padding-inline: 32px;
+  margin: 0;
+  margin-inline-start: -32px;
+  margin-block: -16px 1rem;
+  width: fit-content;
 }
